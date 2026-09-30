@@ -1,7 +1,7 @@
 # ⚡ HappyDev - Offline Developer Utilities Suite
 
 <div align="center">
-  <img src="public/logo.svg" width="96" height="96" alt="HappyDev Logo" />
+  <img src="https://happy-number.cloud/favicon/favicon.svg" width="96" height="96" alt="HappyDev Logo" />
   <h2>A Modern, 100% Offline DevToys Alternative for Developers</h2>
   <p>
     <strong>HappyDev</strong> is a versatile utility suite for developers that provides over 30+ essential tools in a single, high-performance desktop application.
