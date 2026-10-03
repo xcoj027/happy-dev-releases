@@ -80,17 +80,3 @@ You can download the latest pre-compiled installers and portable binaries direct
 - **User-Agent Parser**: It decodes browser versions, operating systems, hardware platforms, and rendering engines from User-Agent strings.
 - **Meta Tags & Social Previewer**: It simulates how social media platforms and search engines will render OpenGraph, Twitter, and Google search metadata.
 
----
-
-## 👨‍💻 Credits
-
-HappyDev is designed, developed, and maintained with care by **TNQSW**.
-
-### Trademark & Attribution Notice
-Any fork, derivative work, distribution, or modification of this project must retain the original **TNQ** trademark, explicit author credit to **TNQSW**, and link back to the official repository at [https://github.com/xcoj027/happy-dev](https://github.com/xcoj027/happy-dev).
-
----
-
-## 📄 License
-
-This project is licensed as open-source software under the terms of the [MIT License (with Trademark Notice)](LICENSE).
