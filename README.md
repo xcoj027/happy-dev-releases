@@ -1,18 +1,15 @@
-# ⚡ HappyDev - Offline Developer Utilities Suite
+# ⚡ HappyDev - Developer Utilities Suite
 
 <div align="center">
   <img src="https://happy-number.cloud/favicon/favicon.svg" width="96" height="96" alt="HappyDev Logo" />
-  <h2>A Modern, 100% Offline DevToys Alternative for Developers</h2>
-  <p>
-    <strong>HappyDev</strong> is a versatile utility suite for developers that provides over 30+ essential tools in a single, high-performance desktop application.
-  </p>
+  <h2>A DevToys Alternative for Developers</h2>
 </div>
 
 ---
 
 ## 📖 Introduction
 
-HappyDev is a comprehensive developer toolbox created as a modern, lightweight, and cross-platform alternative to DevToys. It bundles **38 offline developer utilities** into a unified, responsive interface that helps engineers eliminate repetitive daily friction. Whether you need to format structured data, convert formats, generate cryptographic keys, inspect tokens, or calculate network permissions, HappyDev executes everything instantaneously without sending any data over the internet.
+HappyDev is a comprehensive developer toolbox created as a modern, lightweight and no need the internet, 100% offline application.
 
 ---
 
@@ -22,23 +19,11 @@ You can download the latest pre-compiled installers and portable binaries direct
 
 👉 **[Download Latest Version from GitHub Releases](https://github.com/xcoj027/happy-dev-releases/releases/latest)**
 
-### Automated Builds on Main Branch
-The repository is configured with an automated continuous deployment pipeline powered by GitHub Actions. Every push to the `main` branch automatically triggers a multi-platform compilation matrix that builds and publishes updated installers for all supported operating systems:
-
-- **macOS (Apple Silicon & Intel)**: Download the `.dmg` installer or the standalone `.zip` archive.
-- **Windows (x64 & ARM64)**: Download the standard `.exe` setup installer or the portable executable.
-- **Linux (x64)**: Download the universal `.AppImage` package or the Debian `.deb` installer.
-
----
-
 ## ✨ Key Highlights
 
 - **Over 30+ Built-in Utilities**: HappyDev includes 38 specialized developer tools covering conversions, cryptography, formatting, encoders, datetime calculations, and frontend generators.
 - **A Modern DevToys Alternative**: This application provides a cohesive, zero-latency desktop environment tailored for macOS, Windows, and Linux developers.
-- **100% Offline and Private**: All data processing runs entirely on your local machine with zero telemetry or remote API calls, ensuring your private keys and sensitive code never leave your computer.
-- **Public Release Packages**: Installers are published from the private source repository to a separate public downloads repository.
-- **Instant Command Palette**: Users can press `Cmd + K` on macOS or `Ctrl + K` on Windows and Linux to quickly search and launch any utility from anywhere in the app.
-- **Polished User Interface**: The application features a borderless visual architecture with soft slate-charcoal themes and smooth dark/light mode switching.
+- **100% Offline**: All data processing runs entirely on your local machine with zero telemetry or remote API calls, ensuring your private keys and sensitive code never leave your computer.
 
 ---
 
@@ -94,75 +79,6 @@ The repository is configured with an automated continuous deployment pipeline po
 - **UNIX Chmod Calculator**: It calculates octal numbers and symbolic strings for UNIX file permissions through an interactive checkbox grid.
 - **User-Agent Parser**: It decodes browser versions, operating systems, hardware platforms, and rendering engines from User-Agent strings.
 - **Meta Tags & Social Previewer**: It simulates how social media platforms and search engines will render OpenGraph, Twitter, and Google search metadata.
-
-### 9. Frontend & Visual Design
-- **CSS Box Shadow Generator**: It creates multi-layer smooth box shadows and glassmorphism styling with one-click CSS rule export.
-- **CSS Flexbox & Grid Playground**: It allows developers to test layout behaviors interactively and inspect the resulting CSS rules.
-- **SVG to JSX & Data URI Converter**: It cleans raw SVG vector files and converts them into optimized React TypeScript JSX components or CSS Data URIs.
-
----
-
-## 💻 Local Development Setup
-
-Follow these steps to run and build the application from source code on your local workstation:
-
-### Prerequisites
-- Node.js version 20 or higher is required.
-- The npm package manager must be available in your shell environment.
-
-### Cloning and Installation
-```bash
-# Clone the repository to your local computer
-git clone https://github.com/xcoj027/happy-dev.git
-cd happy-dev
-
-# Install all project dependencies
-npm install
-```
-
-### Running the Live Development Environment
-```bash
-# Start the Vite development server and launch the Electron desktop window
-npm run dev
-```
-
-### Compiling Production Assets
-```bash
-# Verify TypeScript types and compile the client and Electron bundles
-npm run build
-
-# Package the application for your local operating system architecture
-npm run pack
-```
-
-### Generating Distributable Installers
-```bash
-# Build macOS installers (.dmg)
-npm run dist:mac
-
-# Build Windows installers (.exe, portable)
-npm run dist:win
-
-# Build Linux packages (.AppImage, .deb)
-npm run dist:linux
-```
-
----
-
-## 🤖 Continuous Integration and Deployment
-
-The repository includes an automated GitHub Actions workflow defined in [`.github/workflows/build.yml`](.github/workflows/build.yml):
-- The workflow automatically runs on every push to the `main` branch, on version tags (`v*`), and on manual workflow dispatch triggers.
-- It builds binaries concurrently across three operating system runners: `macos-latest`, `windows-latest`, and `ubuntu-latest`.
-- It generates `.dmg`, `.exe`, `.AppImage`, and `.deb` release artifacts.
-- When commits are pushed to the `main` branch, the release step publishes the `latest` assets to the public [`happy-dev-releases`](https://github.com/xcoj027/happy-dev-releases/releases/latest) repository.
-- Version tags (`v*`) publish matching versioned releases to the same public repository.
-
-### Release Repository Configuration
-
-The private source repository requires a `RELEASE_TOKEN` Actions secret containing a fine-grained GitHub personal access token. Grant that token **Contents: read and write** access to `xcoj027/happy-dev-releases`.
-
-The workflow uses `xcoj027/happy-dev-releases` by default. To publish elsewhere, set the `RELEASE_REPOSITORY` Actions variable to the target repository in `owner/name` format.
 
 ---
 
